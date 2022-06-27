@@ -1,7 +1,10 @@
 /* import logo from './logo.svg'; */
 import "./App.css";
 import Componente from "./components/Componente";
+import Estado from "./components/Estado";
 import Propiedades from "./components/Propiedades";
+import RenderizadoCondicional from "./components/RenderizadoCondicional";
+import RenderizadoElementos from "./components/RenderizadoElementos";
 
 function App() {
   return (
@@ -22,6 +25,7 @@ function App() {
       </header> */}
       <section>
         <Componente msg="Hola soy un componente funcional expresado desde una prop" />
+        <hr/>
         <Propiedades 
           cadena="Esto es una cadena" 
           numero={20} 
@@ -32,6 +36,12 @@ function App() {
           elementoReact={<i>Este es un elemento React</i>}
           componenteReact={<Componente msg="Componente pasado como prop" />}
           />
+          <hr/>
+          <Estado/>
+          <hr/>
+          <RenderizadoCondicional />
+          <hr/>
+          <RenderizadoElementos />
       </section>
     </div>
   );
