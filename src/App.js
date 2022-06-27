@@ -1,6 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-import Componente from './components/Componente';
+/* import logo from './logo.svg'; */
+import "./App.css";
+import Componente from "./components/Componente";
+import Propiedades from "./components/Propiedades";
 
 function App() {
   return (
@@ -20,7 +21,17 @@ function App() {
         </a>
       </header> */}
       <section>
-        <Componente msg="Hola soy un componente funcional expresado desde una prop"/>
+        <Componente msg="Hola soy un componente funcional expresado desde una prop" />
+        <Propiedades 
+          cadena="Esto es una cadena" 
+          numero={20} 
+          booleano={true}
+          arreglo={[1,2,3]}
+          objeto={{nombre: "Julián", correo: "juliuis23@gmail.com"}}
+          funcion={(num) => num*num}
+          elementoReact={<i>Este es un elemento React</i>}
+          componenteReact={<Componente msg="Componente pasado como prop" />}
+          />
       </section>
     </div>
   );
