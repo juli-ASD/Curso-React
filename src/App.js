@@ -8,6 +8,7 @@ import Propiedades from "./components/Propiedades";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
 import RenderizadoElementos from "./components/RenderizadoElementos";
 import ComunicacionComponentes from "./components/ComunicacionComponentes"
+import CicloVida from "./components/CicloVida";
 
 function App() {
   return (
@@ -51,6 +52,8 @@ function App() {
           <MasSobreEventos/>
           <hr/>
           <ComunicacionComponentes/>
+          <hr/>
+          <CicloVida/>
       </section>
     </div>
   );
