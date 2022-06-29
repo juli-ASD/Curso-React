@@ -2,9 +2,12 @@
 import "./App.css";
 import Componente from "./components/Componente";
 import Estado from "./components/Estado";
+import Eventos from "./components/Eventos";
+import MasSobreEventos from "./components/MasSobreEventos";
 import Propiedades from "./components/Propiedades";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
 import RenderizadoElementos from "./components/RenderizadoElementos";
+import ComunicacionComponentes from "./components/ComunicacionComponentes"
 
 function App() {
   return (
@@ -42,6 +45,12 @@ function App() {
           <RenderizadoCondicional />
           <hr/>
           <RenderizadoElementos />
+          <hr/>
+          <Eventos />
+          <hr/>
+          <MasSobreEventos/>
+          <hr/>
+          <ComunicacionComponentes/>
       </section>
     </div>
   );
